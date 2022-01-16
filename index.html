@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="style.css" type="text/css" />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <div class="title">
+      <h1>
+        S P L I <br />
+        T T E R
+      </h1>
+    </div>
+
+    <div class="container">
+      <div class="left">
+        <p>Bill</p>
+        <div class="input-1">
+          <input type="text" placeholder="0" id="bill" onkeyup="teste()" />
+          <img id="dollar" src="./images/icon-dollar.svg" alt="" />
+        </div>
+        <p>Select tip %</p>
+
+        <button class="btn btnV" id="5">5%</button>
+        <button class="btn btnV" id="10">10%</button>
+        <button class="btn btnV" id="15">15%</button>
+        <button class="btn btnV" id="25">25%</button>
+        <button class="btn btnV" id="50">50%</button>
+
+        <input class="custom-placeholder" type="text" placeholder="Custom" />
+        <p>Number of people</p>
+        <div class="input-1">
+          <input
+            type="text"
+            placeholder="0"
+            id="number_of_people"
+            onkeyup="teste()"
+          />
+          <img id="user" src="./images/icon-person.svg" alt="" />
+        </div>
+      </div>
+      <div class="right">
+        <div class="value__info">
+          <div class="value__info-left">
+            <p class="right-p">Tip Amount</p>
+            <p class="right-p-small">/ person</p>
+          </div>
+          <div class="value__info-right">
+            <p class="value" id="value_1">$0.00</p>
+          </div>
+        </div>
+        <div class="value__info">
+          <div class="value__info-left">
+            <p class="right-p">Total</p>
+            <p class="right-p-small">/ person</p>
+          </div>
+          <div class="value__info-right">
+            <p class="value" id="value_2">$0.00</p>
+          </div>
+        </div>
+        <div class="reset">
+          <button class="btn btn-reset" id="1">RESET</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
