@@ -1,5 +1,5 @@
 let bill
-let numberofPeople = 1
+let numberofPeople
 let selectedTip = 0
 let value1 = document.getElementById('value_1')
 let value2 = document.getElementById('value_2')
@@ -13,14 +13,7 @@ document.querySelectorAll('.btnV').forEach(function (button) {
   })
 })
 
-//function calcTipAmount() {
-//  bill = Number(document.getElementById('bill').value)
-//  console.log(bill)
-//  numberofPeople = Number(document.getElementById('number_of_people').value)
-//}
-
 function teste() {
-  // if (selectedTip != 0) {
   tipAmount = 0
   bill = Number(document.getElementById('bill').value)
   numberofPeople =
@@ -33,4 +26,3 @@ function teste() {
   value1.textContent = '$' + tipPerPerson.toFixed(2)
   value2.textContent = '$' + totalperPerson.toFixed(2)
 }
-//}
