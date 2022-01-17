@@ -28,25 +28,33 @@
       <div class="left">
         <p>Bill</p>
         <div class="input-1">
-          <input type="text" placeholder="0" id="bill" onkeyup="teste()" />
+          <input type="text" placeholder="0" id="bill" onkeyup="calcTip()" />
           <img id="dollar" src="./images/icon-dollar.svg" alt="" />
         </div>
         <p>Select tip %</p>
 
-        <button class="btn btnV" id="5">5%</button>
-        <button class="btn btnV" id="10">10%</button>
-        <button class="btn btnV" id="15">15%</button>
-        <button class="btn btnV" id="25">25%</button>
-        <button class="btn btnV" id="50">50%</button>
+        <div class="btns">
+          <button class="btn btnV" id="5">5%</button>
+          <button class="btn btnV" id="10">10%</button>
+          <button class="btn btnV" id="15">15%</button>
+          <button class="btn btnV" id="25">25%</button>
+          <button class="btn btnV" id="50">50%</button>
+          <input
+            class="custom-placeholder"
+            type="text"
+            placeholder="Custom"
+            onkeyup="custom()"
+            id="custom"
+          />
+        </div>
 
-        <input class="custom-placeholder" type="text" placeholder="Custom" />
         <p>Number of people</p>
         <div class="input-1">
           <input
             type="text"
             placeholder="0"
             id="number_of_people"
-            onkeyup="teste()"
+            onkeyup="calcTip()"
           />
           <img id="user" src="./images/icon-person.svg" alt="" />
         </div>
@@ -71,7 +79,9 @@
           </div>
         </div>
         <div class="reset">
-          <button class="btn btn-reset" id="1">RESET</button>
+          <button class="btn btn-reset" id="reset" onclick="reset()">
+            RESET
+          </button>
         </div>
       </div>
     </div>
